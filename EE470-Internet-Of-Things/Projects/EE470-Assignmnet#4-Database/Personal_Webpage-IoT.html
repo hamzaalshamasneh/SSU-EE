@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Adjust the layout to the device's screen width. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Text displayed in the browser tab. -->
+    <title>EE470-ECE570 | Hamza Alshamasneh</title>
+
+    <style>
+        /* Include padding and borders within element widths. */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Main page colors and font. */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5fb;
+            color: #203047;
+            line-height: 1.6;
+        }
+
+        /* Blue heading area at the top. */
+        header {
+            background: #1555a2;
+            color: white;
+            padding: 48px 24px;
+            border-bottom: 6px solid #73b5ff;
+        }
+
+        /* Align the header content with the assignment cards. */
+        .header-content {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: clamp(32px, 5vw, 46px);
+        }
+
+        .course-title {
+            margin: 0 0 18px;
+            font-size: 22px;
+        }
+
+        .student-info {
+            margin: 4px 0;
+            color: #e4efff;
+        }
+
+        /* Center the main content. */
+        main {
+            max-width: 1048px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
+
+        /* White cards for the introduction and assignments. */
+        .card {
+            background: white;
+            border: 1px solid #dce5f0;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 3px 12px rgba(20, 55, 100, 0.05);
+        }
+
+        .card h2 {
+            color: #1555a2;
+            margin: 0 0 12px;
+            font-size: 24px;
+        }
+
+        /* Small label above each assignment title. */
+        .badge {
+            display: inline-block;
+            background: #e9f2ff;
+            color: #174f96;
+            border: 1px solid #c5dcfa;
+            border-radius: 20px;
+            padding: 4px 12px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* Style actual links when they are added. */
+        a {
+            color: #1555a2;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: #093a77;
+        }
+
+        /* Highlight links selected using the keyboard. */
+        a:focus-visible {
+            outline: 3px solid #1555a2;
+            outline-offset: 4px;
+        }
+
+        /* Plain text used until a real link is available. */
+        .pending {
+            color: #66758a;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 8px 24px 32px;
+            color: #5d6d82;
+            font-size: 14px;
+        }
+
+        /* Reduce spacing on smaller screens. */
+        @media (max-width: 600px) {
+            header {
+                padding: 32px 20px;
+            }
+
+            main {
+                padding: 0 16px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Course heading and student information. -->
+    <header>
+        <div class="header-content">
+            <h1>EE470-ECE570</h1>
+            <p class="course-title">Internet of Things (IoT)</p>
+
+            <p class="student-info">
+                <strong>Hamza Alshamasneh</strong>
+            </p>
+
+            <p class="student-info">
+                Sonoma State University · Electrical Engineering
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Introduction to the semester assignment page. -->
+        <section class="card">
+            <h2>Course Assignments</h2>
+
+            <p>
+                Welcome to my Internet of Things course webpage.
+                This page contains links to my assignment reports,
+                source code, and project demonstrations throughout
+                the semester.
+            </p>
+        </section>
+
+        <!-- Current database assignment. -->
+        <section class="card">
+            <span class="badge">Database Assignment</span>
+            <h2>Part 1: Database Design and SQL</h2>
+
+            <p>
+                Create sensor registration and measurement tables,
+                combine their information using a view, and enforce
+                data constraints with SQL.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>GitHub — SQL scripts:</strong>
+                    <span class="pending">Link will be added.</span>
+                </li>
+
+                <li>
+                    <strong>Assignment report:</strong>
+                    <span class="pending">Link will be added.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Copy this card when adding another assignment. -->
+        <section class="card">
+            <span class="badge">Semester Projects</span>
+            <h2>Additional Assignments</h2>
+
+            <p>
+                More assignment reports, code, and demonstration
+                links will be added here as the course progresses.
+            </p>
+        </section>
+    </main>
+
+    <!-- Information shown at the bottom of the page. -->
+    <footer>
+        Hamza Alshamasneh · EE470-ECE570 · Fall 2026
+    </footer>
+</body>
+</html>
