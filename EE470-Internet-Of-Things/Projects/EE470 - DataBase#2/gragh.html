@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EE470 IoT — Sensor Temperature</title>
+
+  <style>
+    /* Set the page font and spacing. */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px 15px;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+
+    /* Center the chart and keep it within the screen width. */
+    #chart-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* Center the page headings. */
+    h1,
+    h2,
+    p {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>EE470 — Internet of Things</h1>
+  <p>Hamza Alshamasneh</p>
+
+  <div id="chart-container">
+    <h2>Sensor Node node_1</h2>
+    <p>Temperature (°C) versus time received</p>
+
+    <!-- app.js draws the chart inside this canvas. -->
+    <canvas
+      id="mycanvas"
+      role="img"
+      aria-label="Temperature readings over time for sensor node_1">
+    </canvas>
+  </div>
+
+  <!-- Load jQuery before app.js uses its AJAX function. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Load the Chart.js library before creating the chart. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+  <!-- Load your chart code from the same folder. -->
+  <script src="app.js"></script>
+</body>
+</html>
