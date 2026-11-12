@@ -37,7 +37,6 @@
 const char WIFI_SSID[] = "";
 const char WIFI_PASSWORD[] = "";
 
-// This is a NEW receiver we will create, not the old insert.php.
 const char SERVER_URL[] =
     "https://hamzaalshamasneh.com/Chartjs/esp_insert.php";
 
@@ -48,7 +47,7 @@ constexpr uint8_t ECHO_PIN = D2;
 constexpr uint8_t BUTTON_PIN = D5;
 constexpr uint8_t TILT_PIN = D6;
 
-// Change to HIGH if testing shows your tilt module activates HIGH.
+
 constexpr uint8_t TILT_ACTIVE_LEVEL = LOW;
 
 // ---------- Timing and buffer settings ----------
@@ -171,7 +170,7 @@ Ticker switchTimer;
 // ---------- Clock and queue helpers ----------
 
 bool clockValid() {
-  // Do not create measurements with a 1970/unset timestamp.
+
   return time(nullptr) >= 1704067200;
 }
 
@@ -217,8 +216,7 @@ String urlEncode(const String &input) {
 int httpsGet(const String &url, String &body) {
   BearSSL::WiFiClientSecure client;
 
-  // Lab setting: traffic is encrypted, but the server's certificate
-  // is NOT verified. Certificate validation can be added later.
+
   client.setInsecure();
   client.setTimeout(4000);
 
