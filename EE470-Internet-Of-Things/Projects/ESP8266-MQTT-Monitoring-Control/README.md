@@ -103,22 +103,3 @@ converts timestamps to the selected display timezone.
 
 Passwords in this repository are placeholders. Enter actual
 credentials only in private working copies.
-
-## Demonstration
-
-1. Power the ESP using a USB battery bank.
-2. Start the Python relay.
-3. Change the potentiometer and show its reading in the MQTT app.
-4. Show the new reading in the database and website graph.
-5. Publish 1 and 0 to the command topic and demonstrate LED control.
-6. Press and release the button to demonstrate the switch pulse.
-7. Stop Python using Ctrl+C.
-8. Change the potentiometer again. MQTT readings should continue,
-   but new readings should not be inserted into the database.
-9. Restart Python and demonstrate that saving resumes.
-
-Messages published while the relay is stopped are not recovered.
-
-Because unchanged potentiometer readings are skipped, an old
-database timestamp alone does not prove that the relay stopped.
-Change the potentiometer during this demonstration.
